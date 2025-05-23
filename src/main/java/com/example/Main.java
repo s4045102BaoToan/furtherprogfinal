@@ -1,5 +1,7 @@
 package com.example;
 
+import com.example.DBUtils.JPAUtil;
+
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 
@@ -24,4 +26,6 @@ public class Main {
     public static boolean backendReady() {
         return ready;
     }
+    
 }
+

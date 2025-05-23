@@ -1,0 +1,24 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="my-persistence-unit">
+        <class>com.example.model.Customer</class>
+        <class>com.example.model.DeliveryMan</class>
+        <class>com.example.model.Item</class>
+        <class>com.example.model.Order</class>
+        <properties>
+            <!-- Auto-generate/update tables -->
+            <!-- set value to create to reset the db everytime emf is called / set to update for normal behavior -->
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres"/>
+            <property name="jakarta.persistence.jdbc.user" value="postgres"/>
+            <property name="jakarta.persistence.jdbc.password" value="dVLHQOkG2mwBoJND"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            
+
+        </properties>
+    </persistence-unit>
+</persistence>

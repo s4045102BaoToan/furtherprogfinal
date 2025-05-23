@@ -1,2 +1,8 @@
+com\example\model\Item.class
 com\example\Main.class
+com\example\model\DeliveryMan.class
+com\example\model\Order.class
 com\example\App.class
+com\example\model\Customer.class
+com\example\DBUtils\JPAUtil.class
+com\example\CustomerView.class
